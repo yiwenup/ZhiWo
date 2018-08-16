@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+    <link rel="stylesheet" type="text/css" href="../css/cart2.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="top">
+                <div class="nav">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                欢迎来到知我！这里，用专业呵护美丽。
+                            </li>
+                            <li>
+                                <a href="#">请登录</a>
+                            </li>
+                            <li>
+                                <a href="#">快速注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>微信商城</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <div class="erweima">
+                                    <img src="../images/wechat_ewm1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="iconfont icon-shouji">
+                                    <span>手机知我</span>
+                                </a>
+                            </li>
+                            <li id="show">
+                                <a href="#">
+                                    <span>我的小窝</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <ul class="list">
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠券</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的预定</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>|</li>
+                            <li id="show2">
+                                <a href="#">
+                                    <span>客户服务</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <ul class="list2">
+                                    <li>
+                                        <a href="#">帮助中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">新浪微博</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">正品承诺</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">真伪查询</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="#">
+                                    知我企业
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="map clearfix">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../images/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="payflow">
+                        <ul class="step_img">
+                            <li class="stepItem nowPosi">
+                                <span class="stepNum">1</span>
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="stepItem">
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                                <span class="stepNum">2</span>
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="stepItem">
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                                <span class="stepNum">3</span>
+                            </li>
+                        </ul>
+                        <ul class="step_text">
+                            <li class="step_text1 nowPosi">我的购物车</li>
+                            <li class="step_text2">确认订单信息</li>
+                            <li class="step_text3">成功提交订单</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cartbox">
+                <div class="cart_empty clearfix">
+                    <div class="cart_empty_img">
+                        <img src="../images/empty.png" alt="">
+                    </div>
+                    <div class="cart_empty_tips">
+                        <p class="cart_empty_tips1">您的购物车中没有商品，请先去挑选心爱的商品吧！</p>
+                        <p class="cart_empty_tips2">
+                            <span>您可以</span>
+                            <a href="index.html">返回首页</a>
+                            <span>挑选喜欢的商品！</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_intro clearfix">
+                <dl>
+                    <dt>真品保证</dt>
+                    <dd>
+                        <a href="#">品牌合作</a>
+                    </dd>
+                    <dd>
+                        <a href="#">严格把关</a>
+                    </dd>
+                    <dd>
+                        <a href="#">百度投资</a>
+                    </dd>
+                    <dd>
+                        <a href="#">全球品牌直提供</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>30天包退</dt>
+                    <dd>
+                        <a href="#">退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#">办理退换货</a>
+                    </dd>
+                    <dd>
+                        <a href="#">售后服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>139元包邮</dt>
+                    <dd>
+                        <a href="#">配送政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#">快递查询</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>药妆专柜</dt>
+                    <dd>
+                        <a href="#">肌肤判定</a>
+                    </dd>
+                    <dd>
+                        <a href="#">肌肤问题</a>
+                    </dd>
+                    <dd>
+                        <a href="#">达人推荐</a>
+                    </dd>
+                    <dd>
+                        <a href="#">护肤常识</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>关于知我</dt>
+                    <dd>
+                        <a href="#">知我介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作</a>
+                    </dd>
+                    <dd>
+                        <a href="#">友情链接</a>
+                    </dd>
+                    <dd>
+                        <a href="#">开放API</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="#">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="#">化妆品品牌大全</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>联系方式</dt>
+                    <dd>
+                        <a href="#">在线客服咨询</a>
+                    </dd>
+                    <dd class="contact_method">热线</dd>
+                    <dd class="contact_phone">
+                        18601336775<br>010-65389618
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more footer_intro_wechat">
+                    <dt>知我微信商城</dt>
+                    <dd>
+                        <img src="../images/wechat_ewm1.jpg" alt="">
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer_center">
+                <div class="footer_center_box clearfix">
+                    <ul>
+                        <li class="fcb_1">
+                            <span>百度投资</span>
+                        </li>
+                        <li class="fcb_2">
+                            <span>真品保证</span>
+                        </li>
+                        <li class="fcb_3">
+                            <span>30天包退</span>
+                        </li>
+                        <li class="fcb_4">
+                            <span>139元包邮</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright_text1">
+                    &copy; 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：18601336775
+                </p>
+                <p class="footer_copyright_text2">
+                    <a href="#">京ICP备10047008号</a>
+                    <a href="#">京ICP证B2-20170630号</a>
+                    | 网公安备1101054365号 | 营业执照
+                </p>
+                <p>
+                    <img src="../images/footer_copy_02.jpg" alt="">
+                    <img src="../images/footer_copy_03.jpg" alt="">
+                    <img src="../images/footer_copy_05.jpg" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

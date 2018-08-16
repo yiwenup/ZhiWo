@@ -1,0 +1,564 @@
+.wrap{
+background: #f6f6f3;
+color: #6c6c6c;
+}
+
+.wrap .header{
+width:100%;
+}
+
+.wrap .header .top{
+height: 29px;
+background: #f2f2f2;
+border-bottom: 1px #e5e5e5 solid;
+}
+
+.wrap .header .top .nav{
+height: 29px;
+width:960px;
+line-height: 30px;
+margin: 0 auto;
+}
+
+.wrap .header .top .nav .left{
+float:left;
+}
+
+.wrap .header .top .nav .left ul{
+list-style:none;
+height:30px;
+}
+
+.wrap .header .top .nav .left ul li{
+float: left;
+margin-right: 30px;
+font-size:12px;
+}
+
+.wrap .header .top .nav .left ul li a{
+color: #6c6c6c;
+display: block;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right{
+float:right;
+}
+
+.wrap .header .top .nav .right ul{
+list-style:none;
+height:30px;
+}
+
+.wrap .header .top .nav .right ul li{
+float: left;
+padding: 0 12px;
+font-size:12px;
+position:relative;
+}
+
+.wrap .header .top .nav .right ul li a{
+color: #6c6c6c;
+display: block;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right ul li .erweima{
+width: 85px;
+height:85px;
+position: absolute;
+background: #fff;
+top: 29px;
+right:0px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+display: none;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .erweima img{
+display: block;
+width: 100%;
+}
+
+.iconfont.icon-shouji{
+color:#0094ff !important;
+font-size:14px;
+}
+
+.iconfont.icon-shouji span{
+color: #6c6c6c !important;
+font-size:12px;
+}
+
+.wrap .header .top .nav .right ul li .list{
+list-style:none;
+height: 150px;
+padding-top: 3px;
+margin-top: 0px;
+padding-bottom: 10px;
+margin-bottom: 0px;
+width: 100%;
+position: absolute;
+display:none;
+background: #fff;
+top: 29px;
+left: -1px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .list2{
+list-style:none;
+height: 120px;
+padding-top: 3px;
+margin-top: 0px;
+padding-bottom: 10px;
+margin-bottom: 0px;
+width: 100%;
+position: absolute;
+display:none;
+background: #fff;
+top: 29px;
+left: -1px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .list li{
+clear: left;
+width: 100%;
+padding: 0;
+}
+
+.wrap .header .top .nav .right ul li .list2 li{
+clear: left;
+width: 100%;
+padding: 0;
+}
+
+.wrap .header .top .nav .right ul li .list li a{
+padding-left: 12px;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right ul li .list2 li a{
+padding-left: 12px;
+text-decoration:none;
+}
+
+.wrap .header .center{
+background: #fff;
+height: 108px;
+}
+
+.wrap .header .center .map{
+margin: 0 auto;
+width:960px;
+height:108px;
+}
+
+.wrap .header .center .map .logo{
+float: left;
+width: 260px;
+height: 108px;
+}
+
+.wrap .header .center .map .logo a img{
+display: block;
+width: 260px;
+height: 108px;
+border:none;
+}
+
+.wrap .header .center .map .tipinfo{
+float: right;
+width: 452px;
+height: 108px;
+}
+
+.wrap .header .center .map .tipinfo img{
+display: block;
+width: 452px;
+height: 108px;
+}
+
+.wrap .container{}
+
+.wrap .container .contentBox{
+width: 100%;
+height: 785px;
+position: relative;
+}
+
+.wrap .container .contentBox .contBanner{
+width: 100%;
+height: 785px;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1;
+}
+
+.wrap .container .contentBox .contBanner .contBanner_bg{
+width: 100%;
+height: 785px;
+display: block;
+background:url("../images/contBan_bg2.jpg") no-repeat center center;
+}
+
+.wrap .container .contentBox .contLogin{
+width: 326px;
+height: 459px;
+background: #fff;
+position: absolute;
+top: 125px;
+left: 50%;
+z-index: 2;
+margin-left: 74px;
+box-shadow: 0 0 26px #fcdfdf;
+padding: 30px 40px 40px;
+}
+
+.wrap .container .contentBox .contLogin ._title{
+margin-bottom: 35px;
+}
+
+.wrap .container .contentBox .contLogin ._title p{
+overflow: hidden;
+font-family: 微软雅黑;
+}
+
+.wrap .container .contentBox .contLogin ._title p span{
+font-size: 24px;
+color: #000;
+float: left;
+}
+
+.wrap .container .contentBox .contLogin ._title p a{
+font-size: 16px;
+color: #00c8ff;
+float: right;
+margin-top: 7px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation{
+margin-bottom: 15px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform{
+display: block;
+margin-top: 0em;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .u_info_name{
+overflow: hidden;
+margin-bottom: 4px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .u_info_name label{
+float: left;
+font-size: 16px;
+font-family: 微软雅黑;
+color: rgb(0, 0, 0);
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .u_info_txt{
+position: relative;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .u_info_txt input{
+width: 314px;
+height: 16px;
+border: 1px #c4c4c4 solid;
+font-size: 14px;
+padding: 7px 0;
+color: #6c6c6c;
+padding-left: 10px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .u_info_txt input::placeholder{
+opacity:0.5;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_account{
+margin-bottom: 24px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_password{
+margin-bottom: 10px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_verifycode{
+height: 56px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_verifycode .u_info_txt{
+overflow: hidden;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_verifycode .u_info_txt input{
+width: 165px;
+float: left;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_verifycode .u_info_txt img{
+margin: 7px 0 0 21px;
+float: left;
+width: 75px;
+height: 20px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_verifycode .u_info_txt span{
+float: left;
+color: #00c8ff;
+margin: 9px 0 0 11px;
+font-size: 14px;
+cursor: pointer;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_operate{
+width: 326px;
+overflow: hidden;
+margin-bottom: 20px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_operate .autoLogin{
+float: left;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_operate .autoLogin .check{
+height: 14px;
+cursor: pointer;
+display: block;
+padding-left: 18px;
+background: url(../images/check.png) no-repeat 0 -40px;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_operate .forgetPwd{
+float:right;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_operate .forgetPwd a{
+color: #6c6c6c;
+}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_button{}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_button p{}
+
+.wrap .container .contentBox .contLogin ._infomation .userLoginform .uInfo_button p input{
+width: 326px;
+height: 36px;
+color: rgb(255, 255, 255);
+text-align: center;
+line-height: 36px;
+font-family: 微软雅黑;
+font-size: 20px;
+letter-spacing: 6px;
+padding-left: 6px;
+cursor: pointer;
+background: rgb(0, 200, 255);
+border-width: 0px;
+border-style: initial;
+border-color: initial;
+border-image: initial;
+}
+
+.wrap .container .contentBox .contLogin ._other{
+padding-top: 10px;
+border-top: 1px #e3e3e3 dotted;
+}
+
+.wrap .container .contentBox .contLogin ._other p{}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect{
+margin-top: 20px;
+margin-left: -20px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li{
+height: 30px;
+float: left;
+margin-left: 20px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li a{
+color: #6c6c6c;
+background: url(../images/other_autoico.png) no-repeat 0 0;
+padding-left: 30px;
+display: block;
+height: 30px;
+line-height: 23px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(1) a{
+background-position: 0 0px;
+font-size: 14px;
+font-family: Arial;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(2) a{
+background-position: 0 -30px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(3) a{
+background-position: 0 -60px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(4) a{
+background-position: 0 -90px;
+font-size: 14px;
+font-family: Arial;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(5) a{
+background-position: 0 -120px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(6) a{
+width: 47px;
+background-position: 0 -180px;
+}
+
+.wrap .container .contentBox .contLogin ._other .otherConnect li:nth-child(7) a{
+background-position: 0 -210px;
+}
+
+.wrap .footer{
+clear: both;
+width: 100%;
+background: #fff;
+}
+
+.wrap .footer .footer_intro{
+margin: 0 auto 35px;
+padding-top: 34px;
+padding-left: 16px;
+width: 1100px;
+}
+
+.wrap .footer .footer_intro dl{
+float: left;
+width: 122px;
+margin-left: 20px;
+}
+
+.wrap .footer .footer_intro dl dt{
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.wrap .footer .footer_intro dl dd a{
+color: #6c6c6c;
+font-size: 14px;
+line-height: 24px;
+display: block;
+}
+
+.wrap .footer .footer_intro .footer_intro_more{
+margin-left: 8px;
+}
+
+.wrap .footer .footer_intro .footer_intro_more .contact_method{
+font-weight: bold;
+font-size: 14px;
+margin-top: 6px;
+}
+
+.wrap .footer .footer_intro .footer_intro_more .contact_phone{
+color: #00c8ff;
+font-weight: bold;
+margin-top: 8px;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat{
+width: 103px;
+float: right;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat dt{
+margin-left: 6px;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat dd img{
+display: block;
+width: 103px;
+height: 103px;
+border:0;
+}
+
+.wrap .footer .footer_center{
+height: 35px;
+background: #00c8ff;
+}
+
+.wrap .footer .footer_center .footer_center_box{
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+
+.wrap .footer .footer_center .footer_center_box ul{
+padding-left: 58px;
+text-align: center;
+font-size: 0;
+}
+
+.wrap .footer .footer_center .footer_center_box ul li{
+font-family: 微软雅黑;
+color: rgb(255, 255, 255);
+font-size: 14px;
+font-weight: bold;
+width: 134px;
+height: 35px;
+line-height: 35px;
+display: inline-block;
+padding-left: 30px;
+text-align: left;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_1{
+background: url("../images/assure2.png") no-repeat 0 0;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_2{
+background: url("../images/assure2.png") no-repeat 0 -35px;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_3{
+background: url("../images/assure2.png") no-repeat 0 -70px;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_4{
+background: url("../images/assure2.png") no-repeat 0 -105px;
+}
+
+.wrap .footer_copyright{
+margin: 0 auto;
+padding: 26px 0 45px;}
+
+.wrap .footer_copyright p{
+text-align: center;
+}
+
+.wrap .footer_copyright .footer_copyright_text1{
+margin-bottom: 7px;
+}
+
+.wrap .footer_copyright .footer_copyright_text2{
+margin-bottom: 20px;
+}
+
+.wrap .footer_copyright .footer_copyright_text2 a{
+color: #6c6c6c;
+}

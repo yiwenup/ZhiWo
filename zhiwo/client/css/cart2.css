@@ -1,0 +1,391 @@
+.cartbox2{
+width: 960px;
+margin: 0 auto;
+padding-top: 20px;
+}
+
+.cartbox2 .myCart{}
+
+.cartbox2 .myCart h2{
+font-size: 18px;
+color: #000;
+font-family: '微软雅黑';
+font-weight: normal;
+overflow: hidden;
+}
+
+.cartbox2 .myCart h2 .myCart_title{
+float: left;
+}
+
+.cartbox2 .myCart h2 .myCart_title span{
+margin-right: 12px;
+}
+
+.cartbox2 .myCart h2 .myCart_title i{
+font-style: normal;
+font-family: Arial;
+text-transform: uppercase;
+}
+
+.cartbox2 .myCart h2 .myCart_tips{
+float: right;
+font-size: 12px;
+font-weight: normal;
+color: #6c6c6c;
+height: 22px;
+line-height: 22px;
+}
+
+.cartbox2 .myCart h2 .myCart_tips span{
+margin-right: 12px;
+}
+
+.cartbox2 .myCart h2 .myCart_tips span em{
+color: #ff643c;
+font-style: normal;
+font-weight: bold;
+}
+
+.cartbox2 .myCart .myCart_listBox{
+margin-top: 16px;
+background: #fff;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods{
+width: 960px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav{
+width: 900px;
+padding: 0 30px;
+height: 40px;
+background: #6c6c6c;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul{}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li{
+height: 40px;
+line-height: 40px;
+float: left;
+color: #fff;
+text-align: center;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(1){
+width: 500px;
+text-align: left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(2){
+width: 96px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(3){
+width: 90px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(4){
+width: 80px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(5){
+width: 70px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listNav ul li:nth-child(6){
+width: 64px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon{
+background: #fff;
+padding: 10px 0 0;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item{
+width: 100%;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody{}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr{
+border-bottom: 1px #e3e3e3 dotted;
+position: relative;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td{
+text-align: center;
+word-wrap: break-word;
+word-break: break-all;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(1){
+width: 500px;
+padding: 20px 0 20px 30px;
+position: relative;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(2){
+width: 96px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(2) p{
+font-size:14px !important;
+font-family: 微软雅黑;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3){
+width: 90px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3) .myCart_amountbox{
+position: relative;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3) .myCart_amountbox .amount_info{
+clear: both;
+margin-left: 6px;
+background: #fff;
+width: 77px;
+height: 24px;
+float: left;
+border: 1px #e4e4e4 solid;
+overflow: hidden;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3) .myCart_amountbox .amount_info .numDown{
+width: 24px;
+height: 24px;
+float: left;
+cursor: pointer;
+background: url(../images/updown.png) no-repeat 0 -24px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3) .myCart_amountbox .amount_info .numBuy{
+font-weight: normal;
+width: 29px;
+height: 24px;
+line-height: 24px;
+text-align: center;
+float: left;
+font-family: Arial;
+font-size: 14px;
+border: 0;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(3) .myCart_amountbox .amount_info .numUp{
+width: 24px;
+height: 24px;
+float: left;
+cursor: pointer;
+background: url(../images/updown.png) no-repeat 0 0;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(4){
+width: 80px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(4) p{
+color: #ff643c;
+font-size:14px !important;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(5){
+width: 70px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(5) p{
+font-size:14px !important;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(6){
+width: 64px;
+padding-right: 30px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(6) p{}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_item tbody tr td:nth-child(6) p a{
+color: #6c6c6c;
+line-height: 20px;
+display: block;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper{
+padding: 0 30px;
+height: 110px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper1{
+float: left;
+overflow: hidden;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper1 .del{
+margin: 41px 22px 0 0;
+height: 26px;
+float:left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper1 .del a{
+display: block;
+height: 26px;
+line-height: 26px;
+color: #6c6c6c;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper1 .conbuy{
+margin-top: 41px;
+width: 73px;
+height: 26px;
+float:left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper1 .conbuy a{
+width: 73px;
+height: 26px;
+background: #00c8ff;
+color: #fff;
+text-align: center;
+line-height: 26px;
+display: block;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2{
+float: right;
+overflow: hidden;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .amount{
+height: 45px;
+line-height: 45px;
+margin: 30px 20px 0 0;
+float:left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .amount i{
+font-style: normal;
+color: #ff643c;
+font-family: Arial;
+font-size: 18px;
+margin: 0 4px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .pay{
+height: 45px;
+line-height: 45px;
+margin: 30px 20px 0 0;
+overflow: hidden;
+float:left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .pay span{
+float: left;
+margin-top: 2px;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .pay i{
+font-family: 微软雅黑;
+color: rgb(255, 100, 60);
+font-size: 14px;
+margin-top: 0px;
+font-style: normal;
+float: left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .pay em{
+font-family: Arial;
+font-size: 30px;
+color: #ff643c;
+font-style: normal;
+float: left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .paybtn{
+width: 124px;
+height: 45px;
+margin-top: 30px;
+float:left;
+}
+
+.cartbox2 .myCart .myCart_listBox .myCart_listGoods .myCart_listCon .myCart_oper .oper2 .paybtn a{
+width: 124px;
+height: 45px;
+line-height: 45px;
+text-align: center;
+font-family: 微软雅黑;
+font-size: 24px;
+color: rgb(255, 255, 255);
+display: block;
+background: rgb(255, 100, 60);
+}
+
+.cartbox2 .increase{
+margin-top: 30px;
+}
+
+.cartbox2 .increase h2{
+font-size: 18px;
+color: rgb(0, 0, 0);
+font-family: 微软雅黑;
+font-weight: normal;
+overflow: hidden;
+}
+
+.cartbox2 .increase h2 p{}
+
+.cartbox2 .increase h2 p span{
+margin-right: 12px;
+}
+
+.cartbox2 .increase h2 p i{
+font-style: normal;
+font-family: Arial;
+ text-transform: uppercase;
+}
+
+.cartbox2 .increase .increaseList{
+width: 960px;
+background: #fff;
+margin-top: 16px;
+}
+
+.cartbox2 .increase .increaseList .inclist_nav{
+width: 960px;
+height: 40px;
+}
+
+.cartbox2 .increase .increaseList .inclist_nav ul{
+margin-left: -6px;
+}
+
+.cartbox2 .increase .increaseList .inclist_nav ul li{
+width: 316px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+margin-left: 6px;
+background: #6c6c6c;
+color: #fff;
+font-size: 14px;
+float: left;
+cursor: pointer;
+}
+
+.cartbox2 .increase .increaseList .inclist_nav ul li:hover{
+background-color:#00c8ff;
+}
+
+.cartbox2 .increase .increaseList .inclist_nav ul li span{}
+
+.cartbox2 .increase .increaseList .inclist_nav ul li span em{
+font-style: normal;
+font-family: Arial;
+}
+
+.cartbox2 .increase .increaseList .inclist_con{
+padding: 0 30px 30px;
+}

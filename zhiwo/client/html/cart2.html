@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/cart2.css">
+    <link rel="stylesheet" type="text/css" href="../css/cart.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        function toDecimal(x) {
+            var f = parseFloat(x);
+            if (isNaN(f)) {
+                return false;
+            }
+            var f = Math.round(x*100)/100;
+            var s = f.toString();
+            var rs = s.indexOf('.');
+            if (rs < 0) {
+                rs = s.length;
+                s += '.';
+            }
+            while (s.length <= rs + 2) {
+                s += '0';
+            }
+            return s;
+        }/*强制保留小数点后2位，不足补零*/
+        $(function(){
+            var $num = $(".numBuy").val();/*input*/
+            var all;
+            var $xiaoji = $("#xiaoji").text();/* p */
+            var $jifen = $("#jifen").text();/* p */
+            var $tongji = $("#tongji").text();/*  i  */
+            var $zongji = $("#zongji").text();/*  em  */
+
+            $(".numUp").click(function(){
+                $("#xiaoji").text("");
+                $("#jifen").text("");
+                $("#tongji").text("");
+                $("#zongji").text("");
+                $num++;
+                all = $num*239;
+                $(".numBuy").val($num);
+                $("#xiaoji").text(toDecimal($("#xiaoji").text()+all));
+                $("#jifen").text($("#jifen").text()+all);
+                $("#tongji").text($("#tongji").text()+$num);
+                $("#zongji").text(toDecimal($("#zongji").text()+all));
+            });
+
+            $(".numDown").click(function(){
+                $num--;
+                if($num<=0){
+                    $num = 1
+                }
+                all = $num*239;
+                $(".numBuy").val($num);
+                $("#xiaoji").text(toDecimal(all+239-$xiaoji));
+                $("#jifen").text(all+239-$jifen);
+                $("#tongji").text($num+1-$tongji);
+                $("#zongji").text(toDecimal(all+239-$zongji));
+            });
+        })/*实现购物车的同类增删，并改变价格和相关参数*/
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="top">
+                <div class="nav">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                欢迎来到知我！这里，用专业呵护美丽。
+                            </li>
+                            <li>
+                                <a href="#">请登录</a>
+                            </li>
+                            <li>
+                                <a href="#">快速注册</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span>微信商城</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <div class="erweima">
+                                    <img src="../images/wechat_ewm1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="iconfont icon-shouji">
+                                    <span>手机知我</span>
+                                </a>
+                            </li>
+                            <li id="show">
+                                <a href="#">
+                                    <span>我的小窝</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <ul class="list">
+                                    <li>
+                                        <a href="#">我的订单</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的优惠券</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的收藏</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的预定</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">我的积分</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>|</li>
+                            <li id="show2">
+                                <a href="#">
+                                    <span>客户服务</span>
+                                    <i class="iconfont icon-chanpinliebiao-jiantou-dingqiyuqinianhua"></i>
+                                </a>
+                                <ul class="list2">
+                                    <li>
+                                        <a href="#">帮助中心</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">新浪微博</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">正品承诺</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">真伪查询</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>|</li>
+                            <li>
+                                <a href="#">
+                                    知我企业
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <div class="map clearfix">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="../images/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="payflow">
+                        <ul class="step_img">
+                            <li class="stepItem nowPosi">
+                                <span class="stepNum">1</span>
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="stepItem">
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                                <span class="stepNum">2</span>
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                            </li>
+                            <li class="stepItem">
+                                <span class="stepLine">
+                                    <i></i>
+                                </span>
+                                <span class="stepNum">3</span>
+                            </li>
+                        </ul>
+                        <ul class="step_text">
+                            <li class="step_text1 nowPosi">我的购物车</li>
+                            <li class="step_text2">确认订单信息</li>
+                            <li class="step_text3">成功提交订单</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cartbox2">
+                <div class="myCart">
+                    <h2>
+                        <p class="myCart_title">
+                            <span>我的购物车</span>
+                            <i>My Cart</i>
+                        </p>
+                        <p class="myCart_tips">
+                            <span>
+                                运费每单
+                                <em>8</em>
+                                元
+                            </span>
+                            <span>
+                                满
+                                <em>139</em>
+                                包邮
+                            </span>
+                        </p>
+                    </h2>
+                    <div class="myCart_listBox">
+                        <div class="myCart_listGoods">
+                            <div class="myCart_listNav">
+                                <ul class="clearfix">
+                                    <li>选购的商品</li>
+                                    <li>单价</li>
+                                    <li>数量</li>
+                                    <li>金额小计</li>
+                                    <li>赠送积分</li>
+                                    <li>操作</li>
+                                </ul>
+                            </div>
+                            <div class="myCart_listCon">
+                                <table class="myCart_item">
+                                    <tbody>
+                                        <tr id="myCart_yilishabai">
+                                            <td>
+                                                <img src="../images/yilishabai_info.png" alt="">
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    ￥
+                                                    <span>239</span>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <div class="myCart_amountbox">
+                                                    <p class="amount_info">
+                                                        <span class="numDown"></span>
+                                                        <input class="numBuy" value="1"/>
+                                                        <span class="numUp"></span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p  id="xiaoji">239.00</p>
+                                            </td>
+                                            <td>
+                                                <p  id="jifen">239</p>
+                                            </td>
+                                            <td>
+                                                <p>
+                                                    <a class="removeIt" href="javascript:void(0)">删除</a>
+                                                    <a href="javascript:void(0)">收藏</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="myCart_oper">
+                                    <div style="margin-left:15px;margin-top:10px;"></div>
+                                    <div class="oper1">
+                                        <p class="del">
+                                            <a href="#">全部清空</a>
+                                        </p>
+                                        <p class="conbuy">
+                                            <a href="index.html">继续购物</a>
+                                        </p>
+                                    </div>
+                                    <div class="oper2">
+                                        <p class="amount">
+                                            共<i id="tongji">1</i>件商品
+                                        </p>
+                                        <p class="pay">
+                                            <span>应付金额（不含运费）：</span>
+                                            <i>￥</i>
+                                            <em id="zongji">239.00</em>
+                                        </p>
+                                        <p class="paybtn">
+                                            <a href="#">去结算</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="increase">
+                    <h2>
+                        <p>
+                            <span>加价购</span>
+                            <i>Increase purchase</i>
+                        </p>
+                    </h2>
+                    <div class="increaseList">
+                        <div class="inclist_nav">
+                            <ul class="clearfix">
+                                <li>
+                                    <span>
+                                        <em>10</em>
+                                        元以下专区
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <em>10</em>
+                                        元至
+                                        <em>30</em>
+                                        元专区
+                                    </span>
+                                </li>
+                                <li>
+                                    <span>
+                                        <em>30</em>
+                                        元以上专区
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="inclist_con"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_intro clearfix">
+                <dl>
+                    <dt>真品保证</dt>
+                    <dd>
+                        <a href="#">品牌合作</a>
+                    </dd>
+                    <dd>
+                        <a href="#">严格把关</a>
+                    </dd>
+                    <dd>
+                        <a href="#">百度投资</a>
+                    </dd>
+                    <dd>
+                        <a href="#">全球品牌直提供</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>30天包退</dt>
+                    <dd>
+                        <a href="#">退换货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#">办理退换货</a>
+                    </dd>
+                    <dd>
+                        <a href="#">售后服务</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>139元包邮</dt>
+                    <dd>
+                        <a href="#">配送政策</a>
+                    </dd>
+                    <dd>
+                        <a href="#">快递查询</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>药妆专柜</dt>
+                    <dd>
+                        <a href="#">肌肤判定</a>
+                    </dd>
+                    <dd>
+                        <a href="#">肌肤问题</a>
+                    </dd>
+                    <dd>
+                        <a href="#">达人推荐</a>
+                    </dd>
+                    <dd>
+                        <a href="#">护肤常识</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>关于知我</dt>
+                    <dd>
+                        <a href="#">知我介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="#">商务合作</a>
+                    </dd>
+                    <dd>
+                        <a href="#">友情链接</a>
+                    </dd>
+                    <dd>
+                        <a href="#">开放API</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>新手指南</dt>
+                    <dd>
+                        <a href="#">购物流程</a>
+                    </dd>
+                    <dd>
+                        <a href="#">支付方式</a>
+                    </dd>
+                    <dd>
+                        <a href="#">化妆品品牌大全</a>
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more">
+                    <dt>联系方式</dt>
+                    <dd>
+                        <a href="#">在线客服咨询</a>
+                    </dd>
+                    <dd class="contact_method">热线</dd>
+                    <dd class="contact_phone">
+                        18601336775<br>010-65389618
+                    </dd>
+                </dl>
+                <dl class="footer_intro_more footer_intro_wechat">
+                    <dt>知我微信商城</dt>
+                    <dd>
+                        <img src="../images/wechat_ewm1.jpg" alt="">
+                    </dd>
+                </dl>
+            </div>
+            <div class="footer_center">
+                <div class="footer_center_box clearfix">
+                    <ul>
+                        <li class="fcb_1">
+                            <span>百度投资</span>
+                        </li>
+                        <li class="fcb_2">
+                            <span>真品保证</span>
+                        </li>
+                        <li class="fcb_3">
+                            <span>30天包退</span>
+                        </li>
+                        <li class="fcb_4">
+                            <span>139元包邮</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p class="footer_copyright_text1">
+                    &copy; 2015-2019 知我天成科技（北京）股份有限公司 zhiwo.com 保留一切权利。客服热线：18601336775
+                </p>
+                <p class="footer_copyright_text2">
+                    <a href="#">京ICP备10047008号</a>
+                    <a href="#">京ICP证B2-20170630号</a>
+                    | 网公安备1101054365号 | 营业执照
+                </p>
+                <p>
+                    <img src="../images/footer_copy_02.jpg" alt="">
+                    <img src="../images/footer_copy_03.jpg" alt="">
+                    <img src="../images/footer_copy_05.jpg" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

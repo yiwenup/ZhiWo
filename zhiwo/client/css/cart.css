@@ -1,0 +1,459 @@
+.wrap{
+background: #f6f6f3;
+color: #6c6c6c;
+}
+
+.wrap .header{
+width:100%;
+}
+
+.wrap .header .top{
+height: 29px;
+background: #f2f2f2;
+border-bottom: 1px #e5e5e5 solid;
+}
+
+.wrap .header .top .nav{
+height: 29px;
+width:960px;
+line-height: 30px;
+margin: 0 auto;
+}
+
+.wrap .header .top .nav .left{
+float:left;
+}
+
+.wrap .header .top .nav .left ul{
+list-style:none;
+height:30px;
+}
+
+.wrap .header .top .nav .left ul li{
+float: left;
+margin-right: 30px;
+font-size:12px;
+}
+
+.wrap .header .top .nav .left ul li a{
+color: #6c6c6c;
+display: block;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right{
+float:right;
+}
+
+.wrap .header .top .nav .right ul{
+list-style:none;
+height:30px;
+}
+
+.wrap .header .top .nav .right ul li{
+float: left;
+padding: 0 12px;
+font-size:12px;
+position:relative;
+}
+
+.wrap .header .top .nav .right ul li a{
+color: #6c6c6c;
+display: block;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right ul li .erweima{
+width: 85px;
+height:85px;
+position: absolute;
+background: #fff;
+top: 29px;
+right:0px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+display: none;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .erweima img{
+display: block;
+width: 100%;
+}
+
+.iconfont.icon-shouji{
+color:#0094ff !important;
+font-size:14px;
+}
+
+.iconfont.icon-shouji span{
+color: #6c6c6c !important;
+font-size:12px;
+}
+
+.wrap .header .top .nav .right ul li .list{
+list-style:none;
+height: 150px;
+padding-top: 3px;
+margin-top: 0px;
+padding-bottom: 10px;
+margin-bottom: 0px;
+width: 100%;
+position: absolute;
+display:none;
+background: #fff;
+top: 29px;
+left: -1px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .list2{
+list-style:none;
+height: 120px;
+padding-top: 3px;
+margin-top: 0px;
+padding-bottom: 10px;
+margin-bottom: 0px;
+width: 100%;
+position: absolute;
+display:none;
+background: #fff;
+top: 29px;
+left: -1px;
+padding: 3px 0 10px;
+border: 1px #e5e5e5 solid;
+border-top: 0;
+overflow: hidden;
+z-index:100;
+}
+
+.wrap .header .top .nav .right ul li .list li{
+clear: left;
+width: 100%;
+padding: 0;
+}
+
+.wrap .header .top .nav .right ul li .list2 li{
+clear: left;
+width: 100%;
+padding: 0;
+}
+
+.wrap .header .top .nav .right ul li .list li a{
+padding-left: 12px;
+text-decoration:none;
+}
+
+.wrap .header .top .nav .right ul li .list2 li a{
+padding-left: 12px;
+text-decoration:none;
+}
+
+.wrap .header .center{
+background: #fff;
+height: 108px;
+}
+
+.wrap .header .center .map{
+margin: 0 auto;
+width:960px;
+height:108px;
+}
+
+.wrap .header .center .map .logo{
+float: left;
+width: 260px;
+height: 108px;
+}
+
+.wrap .header .center .map .logo a img{
+display: block;
+width: 260px;
+height: 108px;
+border:none;
+}
+
+.wrap .header .center .map .payflow{
+float: right;
+margin-top: 26px;
+}
+
+.wrap .header .center .map .payflow .step_img{
+text-align: right;
+font-size: 0;
+padding-right: 26px;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem{
+display: inline-block;
+overflow: hidden;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem.nowPosi .stepNum{
+background-position: 0 -35px;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem .stepNum{
+float: left;
+width: 35px;
+height: 35px;
+background: url(../images/liucheng_bg.png) no-repeat 0 0;
+text-align: center;
+line-height: 35px;
+color: #fff;
+font-size: 20px;
+font-family: Arial;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem .stepLine{
+float: left;
+width: 75px;
+height: 5px;
+background: #6c6c6c;
+margin-top: 15px;
+position: relative;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem.nowPosi .stepLine i{
+display: block;
+}
+
+.wrap .header .center .map .payflow .step_img .stepItem .stepLine i{
+position: absolute;
+top: 0;
+left: 0;
+width: 75px;
+height: 5px;
+background: #00c8ff;
+display: none;
+}
+
+.wrap .header .center .map .payflow .step_text{
+font-size: 0;
+margin-top: 8px;
+}
+
+.wrap .header .center .map .payflow .step_text .nowPosi{
+color: #00c8ff;
+}
+
+.wrap .header .center .map .payflow .step_text li{
+display: inline-block;
+font-size: 12px;
+}
+
+.wrap .header .center .map .payflow .step_text .step_text1{
+margin-left: 4px;
+width: 164px;
+}
+
+.wrap .header .center .map .payflow .step_text .step_text2{
+margin-left: 14px;
+width: 110px;
+}
+
+.wrap .header .center .map .payflow .step_text .step_text3{
+margin-left: 80px;
+}
+
+.wrap .container{
+margin-bottom: 35px;
+}
+
+.wrap .container .cartbox{
+width: 960px;
+margin: 0 auto;
+padding-top: 20px;
+}
+
+.wrap .container .cartbox .cart_empty{
+width: 960px;
+background: #fff;
+padding: 60px 0 140px;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_img{
+float: left;
+width: 135px;
+height: 164px;
+margin-left: 110px;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_img img{
+display: block;
+width: 135px;
+height: 164px;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_tips{
+margin: 50px 0 0 50px;
+float: left;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_tips .cart_empty_tips1{
+font-family: 微软雅黑;
+font-size: 24px;
+color: rgb(196, 196, 196);
+margin-bottom: 10px;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_tips .cart_empty_tips2{
+font-family: 微软雅黑;
+font-size: 0px;
+color: rgb(108, 108, 108);
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_tips .cart_empty_tips2 span{
+display: inline-block;
+font-size: 18px;
+height: 36px;
+line-height: 36px;
+}
+
+.wrap .container .cartbox .cart_empty .cart_empty_tips .cart_empty_tips2 a{
+width: 140px;
+height: 36px;
+line-height: 36px;
+display: inline-block;
+font-size: 20px;
+text-align: center;
+color: #fff;
+background: #ff643c;
+margin: 0 8px;
+}
+
+.wrap .footer{
+clear: both;
+width: 100%;
+background: #fff;
+}
+
+.wrap .footer .footer_intro{
+margin: 0 auto 35px;
+padding-top: 34px;
+padding-left: 16px;
+width: 960px;
+}
+
+.wrap .footer .footer_intro dl{
+float: left;
+width: 110px;
+margin-left: 10px;
+}
+
+.wrap .footer .footer_intro dl dt{
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.wrap .footer .footer_intro dl dd a{
+color: #6c6c6c;
+font-size: 14px;
+line-height: 24px;
+display: block;
+}
+
+.wrap .footer .footer_intro .footer_intro_more{
+margin-left: 8px;
+}
+
+.wrap .footer .footer_intro .footer_intro_more .contact_method{
+font-weight: bold;
+font-size: 14px;
+margin-top: 6px;
+}
+
+.wrap .footer .footer_intro .footer_intro_more .contact_phone{
+color: #00c8ff;
+font-weight: bold;
+margin-top: 8px;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat{
+width: 103px;
+float: right;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat dt{
+margin-left: 6px;
+}
+
+.wrap .footer .footer_intro .footer_intro_wechat dd img{
+display: block;
+width: 103px;
+height: 103px;
+border:0;
+}
+
+.wrap .footer .footer_center{
+height: 35px;
+background: #00c8ff;
+}
+
+.wrap .footer .footer_center .footer_center_box{
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+
+.wrap .footer .footer_center .footer_center_box ul{
+padding-left: 58px;
+text-align: center;
+font-size: 0;
+}
+
+.wrap .footer .footer_center .footer_center_box ul li{
+font-family: 微软雅黑;
+color: rgb(255, 255, 255);
+font-size: 14px;
+font-weight: bold;
+width: 134px;
+height: 35px;
+line-height: 35px;
+display: inline-block;
+padding-left: 30px;
+text-align: left;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_1{
+background: url("../images/assure2.png") no-repeat 0 0;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_2{
+background: url("../images/assure2.png") no-repeat 0 -35px;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_3{
+background: url("../images/assure2.png") no-repeat 0 -70px;
+}
+
+.wrap .footer .footer_center .footer_center_box ul .fcb_4{
+background: url("../images/assure2.png") no-repeat 0 -105px;
+}
+
+.wrap .footer_copyright{
+margin: 0 auto;
+padding: 26px 0 45px;}
+
+.wrap .footer_copyright p{
+text-align: center;
+}
+
+.wrap .footer_copyright .footer_copyright_text1{
+margin-bottom: 7px;
+}
+
+.wrap .footer_copyright .footer_copyright_text2{
+margin-bottom: 20px;
+}
+
+.wrap .footer_copyright .footer_copyright_text2 a{
+color: #6c6c6c;
+}
